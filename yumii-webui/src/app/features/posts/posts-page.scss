@@ -1,0 +1,49 @@
+@use 'variables' as *;
+
+.card {
+  background: $color-surface;
+  border: 1px solid $color-border;
+  border-radius: $radius;
+  padding: $space-3;
+  margin-bottom: $space-3;
+
+  h2 {
+    margin: 0 0 $space-2;
+    font-size: 1.125rem;
+  }
+
+  small {
+    color: $color-muted;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+
+  input,
+  textarea {
+    padding: $space-2;
+    border: 1px solid $color-border;
+    border-radius: $radius;
+  }
+
+  button {
+    align-self: flex-start;
+    padding: $space-2 $space-3;
+    border: 0;
+    border-radius: $radius;
+    background: $color-primary;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.error {
+  color: #c92a2a;
+}
+
+.muted {
+  color: $color-muted;
+}

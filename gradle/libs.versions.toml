@@ -1,0 +1,12 @@
+[versions]
+java = "21"
+spring-boot = "4.1.0"
+node-gradle = "7.1.0"
+node = "22.23.0"
+
+[libraries]
+spring-boot-bom = { module = "org.springframework.boot:spring-boot-dependencies", version.ref = "spring-boot" }
+
+[plugins]
+spring-boot = { id = "org.springframework.boot", version.ref = "spring-boot" }
+node-gradle = { id = "com.github.node-gradle.node", version.ref = "node-gradle" }

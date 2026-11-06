@@ -1,0 +1,60 @@
+@use 'variables' as *;
+
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: $content-width;
+  margin: 0 auto;
+  padding: 0 $space-3;
+}
+
+.header {
+  background: $color-surface;
+  border-bottom: 1px solid $color-border;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+  }
+}
+
+.brand {
+  font-weight: 700;
+  color: $color-text;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  gap: $space-3;
+
+  &__link {
+    color: $color-muted;
+    text-decoration: none;
+
+    &--active {
+      color: $color-primary;
+      font-weight: 600;
+    }
+  }
+}
+
+.main {
+  flex: 1;
+  padding-top: $space-5;
+  padding-bottom: $space-5;
+}
+
+.footer {
+  padding: $space-3 0;
+  color: $color-muted;
+  font-size: 0.875rem;
+  border-top: 1px solid $color-border;
+}

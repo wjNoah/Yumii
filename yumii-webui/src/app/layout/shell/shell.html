@@ -1,0 +1,16 @@
+<header class="header">
+  <div class="container header__inner">
+    <a class="brand" routerLink="/">Yumii</a>
+    <nav class="nav">
+      <a routerLink="/posts" routerLinkActive="nav__link--active" class="nav__link">Posts</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container main">
+  <router-outlet />
+</main>
+
+<footer class="footer">
+  <div class="container">© {{ year }} Yumii</div>
+</footer>
